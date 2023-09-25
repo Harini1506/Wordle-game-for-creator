@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and text color */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input fields and buttons */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s;
+}
+
+/* Add focus styles */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #18AEFF;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #18AEFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; /* Remove default focus outline */
+    transition: background-color 0.3s;
+}
+
+/* Add hover effect for buttons */
+button:hover {
+    background-color: #007acc;
+}
+
+/* Style the result section */
+.result-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.result-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.result-section p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Add a subtle animation to the result section */
+.result-section.slide-in {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
